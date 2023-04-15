@@ -1,0 +1,11 @@
+export const START = 'START';
+export const FINISHED = 'FINISHED';
+export const HOME_GAME = 'HOME_GAME';
+export const UPDATE_SCORE = 'UPDATE_SCORE';
+export const UPDATE_SUMMARY = 'UPDATE_SUMMARY';
+
+export const GAME_STATUS = {
+	NOT_STARTED: 'NOT_STARTED',
+	IN_PROGRES: 'IN_PROGRES',
+	FINISHED: 'FINISHED'
+};

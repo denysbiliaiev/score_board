@@ -1,8 +1,11 @@
+import React, { Component } from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('init render', () => {
-  render(<App />);
-  const element = screen.getByText(/Score board/i);
-  expect(element).toBeInTheDocument();
+test('Should render boards', () => {
+	render(<App />);
+	const scoreboard = screen.getByText(/Scoreboard/i);
+	const dashboard = screen.getByText(/Dashboard/i);
+	expect(scoreboard).toBeInTheDocument();
+	expect(dashboard).toBeInTheDocument();
 });
